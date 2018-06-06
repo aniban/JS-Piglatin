@@ -12,6 +12,18 @@
     font-size: 60px;
     color: green;
 	  }
+   .button_nice {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+   }
+   .button_nice:hover {
+    background-color: green;
+   }
   </style>
  </head>
 	
@@ -22,7 +34,7 @@
   <h1> Ani's PigLatin generator :) </h1>
   <p> Pig Latin is a string manipulation exercise commonly used as a programming lesson. </p>
   <p> Enjoy!.</p>
-  <button type="button" onclick="fn_pig()">Click to enter an English phrase to translate</button>
+  <button class="button_nice" onclick="fn_pig()">Click to enter an English phrase to translate</button>
   <p id="eng"></p>
   <p id="pig"></p>
 
