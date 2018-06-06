@@ -20,5 +20,33 @@
  <body>
   <h1> My Experiments with the world wide web - finally! </h1>
   <p> Hope to fill this up with links to working pages </p>
+  <h1> Ani's PigLatin generator :) </h1>
+
+<p> Pig Latin is a string manipulation exercise commonly used as a programming lesson. </p>
+
+<p>The algorithm develops new words for each existing word in a string that is taken as input. The resulting string is composed of the 
+
+transformed words that resemble latin as they end with vowel "a". Enjoy!.</p>
+
+<p id="eng"></p>
+<p id="pig"></p>
+
+<script>
+	var sentence = prompt("Enter an English phrase without punctuation", "<enter words here>");
+	document.getElementById("eng").innerHTML="English sentence is: "+sentence;
+
+	var pig_str = "";
+	var words = sentence.split(" ");
+	var lng = words.length
+	for (i=0; i<lng ; i++){
+		eng_word=words[i];
+		if (eng_word.length>0){
+			pig_str += eng_word.slice(1)+eng_word.slice(0,1)+"a ";
+		};
+	};
+	pig_str = pig_str.slice(0,-1);
+	document.getElementById("pig").innerHTML="Piglatin sentence is: "+pig_str;		
+</script>
+
  </body>
 </html>
