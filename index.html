@@ -22,11 +22,12 @@
   <h1> Ani's PigLatin generator :) </h1>
   <p> Pig Latin is a string manipulation exercise commonly used as a programming lesson. </p>
   <p> Enjoy!.</p>
-
+  <button type="button" onclick="fn_pig()">click to input</button>
   <p id="eng"></p>
   <p id="pig"></p>
 
 <script>
+  function fn_pig() {
 	var sentence = prompt("Enter an English phrase without punctuation", "<enter words here>");
 	document.getElementById("eng").innerHTML="English sentence is: "+sentence;
 
@@ -40,7 +41,9 @@
 		};
 	};
 	pig_str = pig_str.slice(0,-1);
-	document.getElementById("pig").innerHTML="Piglatin sentence is: "+pig_str;		
+	document.getElementById("pig").innerHTML="Piglatin sentence is: "+pig_str;
+	return
+  }
 </script>
 
  </body>
