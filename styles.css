@@ -1,9 +1,13 @@
-body {
+   body {
     background-color: powderblue;
-}
-h1 {
-    color: blue;
-}
-p {
-    color: red;
-}
+    text-align: center;
+    padding: 200px;
+   }
+   h1 {
+    font-size: 60px;
+    color: #eeee33;
+   }
+   p {
+    font-size: 40px;
+    color: white;
+   }
